@@ -1,11 +1,11 @@
 # Site
-repository: PiyushTri/PiyushTripathyResume
-favicon: images/favicon.ico
+repository: "PiyushTri/PiyushTripathyResume"
+favicon: "images/favicon.ico"
 
 # Personal info
-name: Piyush Kumar Tripathy
-title: System Engineer at Tata Consultancy Services (TCS)
-email: tripathyprince1993@gmail.com
+name: "Piyush Kumar Tripathy"
+title: "System Engineer at Tata Consultancy Services (TCS)"
+email: "tripathyprince1993@gmail.com"
 website: www.github.com/PiyushTri/PiyushTripathyResume
 
 # Social links
