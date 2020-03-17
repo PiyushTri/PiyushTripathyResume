@@ -6,11 +6,11 @@ favicon: images/favicon.ico
 name: Piyush Kumar Tripathy
 title: System Engineer at Tata Consultancy Services (TCS)
 email: tripathyprince1993@gmail.com
-website: www.github.com/TriPiyush/PiyushTripathyResume
+website: www.github.com/PiyushTri/PiyushTripathyResume
 
 # Social links
 #twitter_username: facespics
-github_username:  TriPiyush
+github_username:    PiyushTri
 # dribbble_username: jekyll
  facebook_username: piyush.kr.tripathy
 # flickr_username: jekyll
@@ -46,8 +46,6 @@ more_content: | # this will include new lines to allow paragraphs
    - Knitting
    - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
-# Footer
-footer_show_references: true
 
 
 sass:
