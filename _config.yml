@@ -27,6 +27,7 @@ about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Piyush and I'm a System Engineer . As well as administrating systems I also have experience making software and web apps. I have worked at a number of projects gaining teamwork and leadership skills.
 Testing URL
 
+about_content: _data/projects.yml
 
 sass:
   sass_dir: _sass
