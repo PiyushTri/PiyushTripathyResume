@@ -1,5 +1,5 @@
 # Site
-#repository: PiyushTri/PiyushTripathyResume
+repository: PiyushTri/PiyushTripathyResume
 favicon: images/favicon.ico
 
 # Personal info
@@ -27,3 +27,23 @@ about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Piyush and I'm a System Engineer . As well as administrating systems I also have experience making software and web apps. I have worked at a number of projects gaining teamwork and leadership skills.
 Testing URL
 
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
