@@ -20,7 +20,125 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
+<style>
 
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+
+
+.blink {
+  animation: blink 1s infinite;
+}
+@keyframes blink{
+  to { opacity: .1; }
+}
+.flex {
+	display: flex;
+}
+.header-sub-title  {
+
+  font-family: "Courier";
+  
+  
+}
+.subheading{
+  text-transform: capitalize;
+  font-family: "Courier";
+  
+}
+p{ text-transform: capitalize; }
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Source+Sans+Pro');
+
+$mouse-width: 2.5rem;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+  line-height: 1.618;
+ 
+}
+
+h1,
+h2 {
+	font-family: 'Playfair Display', serif;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-size: 3rem;
+	max-width: 35rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+
+
+.mouse {
+
+	width: 10%;
+  height: auto;
+  margin-left: 80%;
+}
+
+
+.scroll {
+	animation-name: scroll;
+	animation-duration: 1.5s;
+	animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+	animation-iteration-count: infinite;
+	transform-origin: 50% 20.5px;
+	will-change: transform, opacity;
+	opacity: 1;
+}
+
+.scroll-link {
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@keyframes scroll {
+
+	0%, 20% {
+		transform: translateY(0) scaleY(1);
+	}
+
+	100% {
+		transform: translateY(36px) scaleY(2);
+		opacity: 0;
+	}
+
+}
+
+.content {
+	min-height: 100vh;
+	max-width: 28rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center; 
+}
+</style>
 </head>
 
 <body id="page-top">
@@ -61,15 +179,28 @@
 
   <div class="container-fluid p-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center hero"id="about">
       <div class="w-100">
-        <h1 class="mb-0">Piyush
-          <span class="text-primary">Tripathy</span>
-        </h1>
-        <div class="subheading mb-5">E 162 Sector 41 Noida 201301 · +91 8468054642 ·
+        <h2 class="mb-0">
+          
+          <div class="flex header-sub-title">
+            <p class="header-sub-title  "style="margin-right: 1pc;" >Piyush </p>
+                <p class="header-sub-title text-primary" id="word"></p><p class="header-sub-title blink">|</p>
+          </div>
+         
+        </h2>
+        <p class="header-sub-title">I Am a <span id="changingword">Devloper</span></p>
+        <div class="subheading mb-5"> Noida, Uttar Pradesh 201301 ·
+          <br> 
+          +91(846)-805-4642 ·
+          <br>
           <a href="mailto:tripathyprince1993@gmail.com">tripathyprince1993@gmail.com</a>
         </div>
-        <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+        
+        <p class="lead mb-5">
+        
+          
+          I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
         <div class="social-icons">
           <a href="#">
             <i class="fab fa-linkedin-in"></i>
@@ -80,16 +211,28 @@
           <a href="#">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/piyush.kr.tripathy">
             <i class="fab fa-facebook-f"></i>
           </a>
         </div>
+      </div>
+      <div >
+	
+          <a class="scroll-link" href="#experience">
+          <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+          <g fill="none" fill-rule="evenodd">
+            <rect width="70" height="118" x="1.5" y="1.5" stroke="#bd5" stroke-width="3" rx="36"/>
+            <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#bd5"/>
+          </g>
+        </svg>
+        </a>
+        
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience" class="content">
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
 
@@ -106,7 +249,7 @@
             <span class="text-primary">June 2018 - Present</span>
           </div>
         </div>
-
+       
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Web Developer</h3>
@@ -297,6 +440,79 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+  <script>
+
+const words = ["Kumar Tripathy", "Tripathy"];
+let i = 0;
+let timer;
+
+function typingEffect() {
+	let word = words[i].split("");
+	var loopTyping = function() {
+		if (word.length > 0) {
+			document.getElementById('word').innerHTML += word.shift();
+		} else {
+			deletingEffect();
+			return false;
+		};
+		timer = setTimeout(loopTyping, 500);
+	};
+	loopTyping();
+};
+
+function deletingEffect() {
+	let word = words[i].split("");
+	var loopDeleting = function() {
+		if (word.length > 0) {
+			word.pop();
+			document.getElementById('word').innerHTML = word.join("");
+		} else {
+			if (words.length > (i + 1)) {
+				i++;
+			} else {
+				i = 0;
+			};
+			typingEffect();
+			return false;
+		};
+		timer = setTimeout(loopDeleting, 200);
+	};
+	loopDeleting();
+};
+
+typingEffect();
+
+(function(){
+      var words = [
+          'Chef',
+          'Designer',
+         
+          'Developer',
+          
+          
+          'Happy Person'
+          ], i = 0;
+      setInterval(function(){
+          $('#changingword').fadeOut(function(){
+              $(this).html(words[i=(i+1)%words.length]).fadeIn();
+          });
+      }, 3000);
+        
+  })();
+
+jQuery(document).ready(function($){
+	
+	$('a.scroll-link').click(function(e){
+		e.preventDefault();
+		$id = $(this).attr('href');
+		$('body,html').animate({
+			scrollTop: $($id).offset().top -20
+		}, 1450);
+	});
+	
+});
+
+  </script>
 
 </body>
 
